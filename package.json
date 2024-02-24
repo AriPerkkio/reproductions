@@ -1,0 +1,15 @@
+{
+  "name": "reproductions",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest --run",
+    "watch": "vitest --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vite-plugin-inspect": "^0.8.3",
+    "vitest": "latest"
+  }
+}
