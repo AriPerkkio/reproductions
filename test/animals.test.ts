@@ -8,6 +8,10 @@ test("Dog doesn't meow", async () => {
   expect(() => new Dog().meow()).toThrowError("Not a cat");
 });
 
+test("Dog eats apples", () => {
+  new Dog().eat("APPLES");
+});
+
 test("Cat can't fly", () => {
   expect("Cat cant fly").toBeTruthy();
 });
