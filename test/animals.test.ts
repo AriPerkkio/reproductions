@@ -1,5 +1,3 @@
-import { test, expect } from "vitest";
-
 import Dog from "../src/animals";
 
 test("Dog says woof", async () => {

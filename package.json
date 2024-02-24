@@ -4,12 +4,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "vitest --run",
-    "watch": "vitest --watch"
+    "test": "jest",
+    "watch": "jest --watchAll"
   },
   "license": "MIT",
   "devDependencies": {
-    "vite-plugin-inspect": "^0.8.3",
-    "vitest": "latest"
+    "@jest/globals": "latest",
+    "@types/jest": "latest",
+    "jest": "latest",
+    "ts-jest": "latest"
   }
 }
