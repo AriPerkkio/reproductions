@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest --run",
     "watch": "vitest --watch",
-    "coverage": "vitest --run --coverage"
+    "coverage": "vitest --run --coverage",
+    "clean": "rm -rf node_modules pnpm-lock.yaml"
   },
   "license": "MIT",
   "devDependencies": {
@@ -14,5 +15,12 @@
     "@vitest/coverage-v8": "latest",
     "vite-plugin-inspect": "^0.8.3",
     "vitest": "latest"
+  },
+  "pnpm -- remove to use local packages": {
+    "overrides": {
+      "@vitest/coverage-istanbul": "link:../vitest/packages/coverage-istanbul",
+      "@vitest/coverage-v8": "link:../vitest/packages/coverage-v8",
+      "vitest": "link:../vitest/packages/vitest"
+    }
   }
 }
