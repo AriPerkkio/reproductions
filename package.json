@@ -13,13 +13,16 @@
   "devDependencies": {
     "@vitest/coverage-istanbul": "latest",
     "@vitest/coverage-v8": "latest",
+    "vite": "^5.1.4",
+    "vite-node": "latest",
     "vite-plugin-inspect": "^0.8.3",
     "vitest": "latest"
   },
-  "pnpm -- remove to use local packages": {
+  "pnpm": {
     "overrides": {
       "@vitest/coverage-istanbul": "link:../vitest/packages/coverage-istanbul",
       "@vitest/coverage-v8": "link:../vitest/packages/coverage-v8",
+      "vite-node": "link:../vitest/packages/vite-node",
       "vitest": "link:../vitest/packages/vitest"
     }
   }
