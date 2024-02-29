@@ -14,6 +14,7 @@ export default class Dog {
   }
 
   meow() {
+    // TODO add cat
     throw new Error("Not a cat");
   }
 
